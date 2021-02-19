@@ -27,6 +27,7 @@ const App = () => {
             return user['name'].toLowerCase().includes(value.toLowerCase())
         })
        setCopyUsers(prevState => newUsers)
+       setCurrentPage(prevState => 1)
    }
    const handlerEdit = (params) =>{
        let newUsers = [...users]
